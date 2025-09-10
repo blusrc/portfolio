@@ -166,7 +166,7 @@ export default function Home() {
             and running experiments that actually convert.
           </p>
           <p>
-            I'm drawn to early-stage chaos → where design, engineering, and
+            I&apos;m drawn to early-stage chaos → where design, engineering, and
             product all blur together.
           </p>
         </motion.section>
