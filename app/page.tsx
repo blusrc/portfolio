@@ -48,17 +48,17 @@ export default function Home() {
             preset="blur"
             className="text-lg md:text-2xl md:leading-10 text-foreground/80 tracking-wide"
           >
-            Hi, I'm Aldiyar. Designer and Developer based in Kazakhstan.
+            Hi, I&apos;m Aldiyar. Designer and Developer based in Kazakhstan.
           </TextEffect>
 
           <h2 className="mt-8 leading-10 text-2xl  text-muted-foreground/60 tracking-wide">
-            I'm obsessed with{" "}
+            I&apos;m obsessed with{" "}
             <span className="text-foreground">
               Design systems, UI engineering and Product design.
             </span>
           </h2>
           <h2 className="leading-10 text-2xl  text-muted-foreground/60 tracking-wide">
-            Here's some of my{" "}
+            Here&apos;s some of my{" "}
             <span className="text-foreground">recent works:</span>
           </h2>
         </section>
