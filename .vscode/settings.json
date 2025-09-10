@@ -1,0 +1,11 @@
+{
+  "typescript.preferences.organizeImports.enabled": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "[mdx]": {
+    "typescript.preferences.organizeImports.enabled": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
+  }
+}
