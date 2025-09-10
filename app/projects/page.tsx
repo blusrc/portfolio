@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -19,9 +20,12 @@ export default function Home() {
     <main className="flex flex-col items-center min-h-dvh [background-image:radial-gradient(#F9F9F9_1px,transparent_1px)] [background-size:24px_24px] dark:[background-image:radial-gradient(#191919_1px,transparent_1px)]">
       <header className="sticky top-0 bg-background/80 backdrop-blur-2xl border-b border-dashed w-full flex items-center justify-center z-10">
         <div className="max-w-screen-xl h-14 border-dashed w-full flex items-center justify-between px-4 xl:border-x lg:px-8">
-          <span className="text-sm font-bold tracking-tighter text-muted-foreground whitespace-nowrap">
+          <Link
+            href="/"
+            className="text-sm font-bold tracking-tighter text-muted-foreground whitespace-nowrap"
+          >
             aldiyar serikov
-          </span>
+          </Link>
 
           <div className="hidden md:block">
             <AnimatedTabsHover />
@@ -51,7 +55,7 @@ export default function Home() {
             preset="blur"
             className="text-lg md:text-2xl md:leading-10 text-foreground/80 tracking-wide"
           >
-            Recent work
+            Recent work (WIP)
           </TextEffect>
         </section>
 
