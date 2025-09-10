@@ -1,7 +1,7 @@
 import { AnimatedBackground } from "@/components/motion-primitives/animated-background";
 
 export function AnimatedTabsHover() {
-  const TABS = ["Projects", "Experience", "About"];
+  const TABS = ["Projects", "Experience"];
 
   return (
     <div className="flex flex-row">
@@ -20,7 +20,7 @@ export function AnimatedTabsHover() {
             key={index}
             data-id={tab}
             type="button"
-            className="px-2 py-0.5 text-muted-foreground transition-colors duration-30 hover:text-accent-foreground"
+            className="px-4 py-2 text-muted-foreground transition-colors duration-30 hover:text-accent-foreground"
           >
             {tab}
           </button>
