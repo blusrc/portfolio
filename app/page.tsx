@@ -7,7 +7,6 @@ import { TextEffect } from "@/components/ui/text-effect";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight, Earth, Sprout } from "lucide-react";
 import { motion } from "motion/react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -72,7 +71,7 @@ export default function Home() {
   ];
   return (
     <main className="flex flex-col items-center min-h-dvh [background-image:radial-gradient(#F9F9F9_1px,transparent_1px)] [background-size:24px_24px] dark:[background-image:radial-gradient(#191919_1px,transparent_1px)]">
-      <header className="z-20 sticky top-0 bg-background/80 backdrop-blur-2xl border-b border-dashed w-full flex items-center justify-center z-10">
+      <header className="z-20 sticky top-0 bg-background/80 backdrop-blur-2xl border-b border-dashed w-full flex items-center justify-center">
         <div className="max-w-screen-xl h-14 border-dashed w-full flex items-center justify-between px-4 xl:border-x lg:px-8">
           <Link
             href="/"
@@ -109,14 +108,14 @@ export default function Home() {
           animate="visible"
           transition={{ ...sectionTransition, delay: 0.1 }}
         >
-          <div className="flex flex-col max-h-36 relative">
-            <Image
+          <div className="flex rounded-3xl h-36 relative bg-[url(/almaty.jpg)] bg-cover bg-center">
+            {/* <Image
               src="/almaty.jpg"
               alt="Almaty"
               width={704}
               height={396}
               className="rounded-3xl shadow-sm aspect-video object-cover h-full"
-            />
+            /> */}
             <Avatar className="absolute -bottom-8 size-16 left-6 z-10 ring-6 ring-background">
               <AvatarImage src="/avatar.jpg" />
               <AvatarFallback>AS</AvatarFallback>
