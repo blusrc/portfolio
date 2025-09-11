@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aldiyar Serikov",
   description: "Designer and Developer based in Kazakhstan",
+  metadataBase: new URL("https://aldiyar.design"),
   openGraph: {
     images: ["/api/og"],
   },

@@ -18,7 +18,7 @@ export const ImageZoom = ({
   backdropClassName,
   ...props
 }: ImageZoomProps) => (
-  <span
+  <div
     className={cn(
       "relative inline-block",
       "[&_[data-rmiz-ghost]]:pointer-events-none [&_[data-rmiz-ghost]]:absolute",
@@ -48,5 +48,5 @@ export const ImageZoom = ({
       )}
       {...props}
     />
-  </span>
+  </div>
 );

@@ -54,7 +54,7 @@ export default async function Page({
 }
 
 export function generateStaticParams() {
-  return [{ project: "editscape" }];
+  return [{ project: "editscape" }, { project: "academy" }];
 }
 
 export const dynamicParams = false;

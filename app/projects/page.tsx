@@ -8,6 +8,12 @@ import Link from "next/link";
 
 const projects = [
   {
+    name: "Jobescape",
+    description: "A redesigned learning platform for the Jobescape platform.",
+    image: "/je/academy.png",
+    link: "/projects/academy",
+  },
+  {
     name: "Editscape",
     description: "A content creation tool for the Jobescape Academy.",
     image: "/editscape/thumbnail.png",
