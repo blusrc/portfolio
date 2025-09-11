@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ImageZoom } from "@/components/ui/kibo-ui/image-zoom";
 import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
 
@@ -26,12 +27,14 @@ const components: MDXComponents = {
   },
   // Add other components you want to use globally in MDX files
   Image: (props) => (
-    <Image
-      height={1080}
-      width={1920}
-      {...(props as ImageProps)}
-      className="border-x w-full border-dashed mt-8"
-    />
+    <ImageZoom>
+      <Image
+        height={1080}
+        width={1920}
+        {...(props as ImageProps)}
+        className="border-x w-full border-dashed mt-8"
+      />
+    </ImageZoom>
   ),
   ul: ({ children }) => (
     <ul className="[&:is(p+&)]:pt-1 list-disc list-inside pt-12 px-4 border-x w-full border-dashed [&>li]:mt-2 [&>li]:leading-6">

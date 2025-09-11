@@ -3,6 +3,7 @@ import { ModeToggle } from "@/components/theme-switcher";
 import { buttonVariants } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { cn } from "@/lib/utils";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -67,14 +68,33 @@ export default function Home() {
 
         <section className="flex flex-col gap-12 pb-72">
           {projects.map((project) => (
-            <a
+            <div
               key={project.name}
               className="flex flex-col md:flex-row gap-1 w-full"
-              href={project.link}
             >
-              <div className="flex flex-col w-full py-2 pr-8">
-                <h3 className="text-lg">{project.name}</h3>
-                <p className="text-muted-foreground">{project.description}</p>
+              <div className="flex gap-2 md:flex-col w-full py-2 md:pr-8">
+                <div className="flex-1">
+                  <h3 className="text-lg">{project.name}</h3>
+                  <p className="text-muted-foreground">{project.description}</p>
+                </div>
+                <div className="md:mt-auto">
+                  <a
+                    className={cn(
+                      buttonVariants({ size: "icon" }),
+                      "md:hidden"
+                    )}
+                    href={project.link}
+                  >
+                    <ArrowUpRight className="size-4" />
+                  </a>
+                  <a
+                    className={cn(buttonVariants({}), "hidden md:inline-flex")}
+                    href={project.link}
+                  >
+                    View Project
+                    <ArrowUpRight className="size-4" />
+                  </a>
+                </div>
               </div>
               <Image
                 src={project.image}
@@ -83,11 +103,11 @@ export default function Home() {
                 height={420}
                 className="w-full rounded-xl aspect-video object-cover"
               />
-            </a>
+            </div>
           ))}
         </section>
       </div>
-      <footer className="fixed bottom-0 w-dvw bg-linear-to-b from-transparent to-background h-64 flex items-end justify-center pb-8">
+      <footer className="fixed bottom-0 w-dvw bg-linear-to-b from-transparent to-background h-24 flex items-end justify-center pb-8">
         <div className="block md:hidden">
           <AnimatedTabsHover />
         </div>
