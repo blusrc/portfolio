@@ -34,7 +34,7 @@ export default function Home() {
     {
       year: "2024-2025",
       company: "nomad venture studio (jobescape)",
-      role: "Product Designer",
+      role: "product designer",
       description: [
         "At NVS, I dove into the chaos of an early-stage AI edtech startup. Joining at time of high growth that resulted in an inconsistent UI and a lot of design debt.",
 
@@ -42,13 +42,13 @@ export default function Home() {
 
         "I became the go-to person for shadcn/ui, integrating it end-to-end - from Figma to Next.js and helping the team ship 2x faster. Design wasn’t just Figma — I shipped code.",
 
-        "Beyond product, I shaped brand identity, logos, merch, upsell assets, and fundraising decks. At Nomad, “designer” meant product shaper, growth hacker, and engineer all at once.",
+        "Beyond product, I shaped brand identity, logos, merch, upsell assets, and fundraising decks. 'Ddesigner' meant product shaper, growth hacker, and engineer all at once.",
       ],
     },
     {
       year: "2024",
       company: "aiqas140",
-      role: "CTO",
+      role: "cto",
       description: [
         "Co-founded an angel-backed startup for Kazakhstan’s university exam prep (ҰБТ). Launched the MVP, onboarded first 30+ beta users, and built a small dev team from scratch.",
       ],
@@ -64,7 +64,7 @@ export default function Home() {
     {
       year: "2020-2022",
       company: "24tutors",
-      role: "Designer",
+      role: "graphic designer",
       description: [
         "First design gig — made IG content that tripled their audience.",
       ],
